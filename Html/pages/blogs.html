@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Page</title>
+    <link rel="stylesheet" href="../../Css/home.css">
+    <link rel="stylesheet" href="../../Css/main.css">
+</head>
+<body>
+    <!-- this is the main div that contains all the content of this page -->
+    <div class="container">
+
+        <!-- this div is designed for navbar -->
+        <div class="navbar">
+
+            <!-- this div has logo of website-->
+            <a href="../Index.html">
+                <div class="logo">
+                    <img src="../../images/logo.png">
+                </div>
+            </a>
+            <!-- this div contains all the navigation links of navbar like home,about,contact and blogs  -->
+            <div class="links">
+                <table>
+                    <h2><a href="../Index.html">Home</a></h2>   
+                    <h2><a href="./about.html">About Us</a></h2>    
+                    <h2><a href="./contact.html">Contact</a></h2>   
+                    <h2><a href="./research.html">Researches</a></h2>   
+                    <h2><a href="./blogs.html">Blogs</a></h2>   
+                </table>
+                
+            </div>
+
+             <!-- this div is for search box  -->
+            <div class="search">
+                <input type="text" placeholder="Search for Books" id="searchbox" onkeyup="search()">
+            </div> 
+            
+            <!-- this div contains drop down menu that is for device less than 768px like mobile phones -->
+            <div class="hammenu" onclick="showham()">
+                <button><img src="../../images/hammenu.jpg"></button>
+            </div> 
+
+            <!-- this dov contains close button that closes the drop down menu -->
+            <div class="cross" onclick="hideham()">
+                <button><h1>X</h1></button>
+            </div> 
+            
+        </div>
+
+        <!-- this div contains all the books category list -->
+        <div class="category">
+            <a href="./allbooks.html">
+                <h1>All Books</h1>
+            </a>
+            <a href="./Sifi.html">
+                <h1>SiFi</h1>
+            </a>
+            <a href="./fantasy.html">
+                <h1>Fantasy</h1>
+            </a>
+            <a href="./action.html">
+                <h1>Action<span>&</span><span>Adventure</span></h1>
+            </a>
+            <a href="./crime.html">
+                <h1>Crime <span>& </span><span>Detective</span></h1>
+            </a>
+            <a href="./self.html">
+                <h1>Self Help</h1>
+            </a>
+            <a href="./business.html">
+                <h1>Business</h1>
+            </a>
+        </div>
+
+
+
+          <!-- this is drop down menu for device less than 768px -->
+          <div class="hamlinks">
+            <a href="../Index.html">Home</a>  
+            <a href="./about.html">About Us</a> 
+            <a href="./contact.html">Contact</a> 
+            <a href="./research.html">Researches</a>   
+            <a href="./blogs.html">Blogs</a>    
+            <a href="./allbooks.html">ALL</a>
+            <a href="./Sifi.html">SiFI </a>
+            <a href="./fantasy.html">Fantasy</a>
+            <a href="./action.html">Action And Adventure</a>
+            <a href="./crime.html">Crime And Detective</a>
+            <a href="./self.html">Self Help</a>
+            <a href="./business.html">Business</a>
+        </div>
+
+        <!-- blog section for 1 div -->
+        <div class="blog">
+            <div class="blog-content">  
+                <div class="blog-title">
+                    <h1>What is Technology??</h1>
+                </div>
+                <div class="blog-desc">
+                    <p><span>"</span>We know, this world has been changing rapidly since the day of human existance
+                        People have been developing several technologies that has been changing life of human
+                        beings do effectively and effeciently. NOwadays, it is hard to imagine our life without
+                        the use of technology. so, technology is something that makes our life easier and faster.
+                        Technology is the branch of knowledge dealing with engineering or applied sciences.
+                        Technologies can be simple or complex, hard to use or easy to use. it can be either mechanical or
+                        electrical and either manual or automatic.<span>"</span></p>
+                </div>
+            </div>
+            <div class="blogimg"><img src="../../images/blog/technology1.jpg"></div>
+            
+        </div>
+
+        <!-- second div -->
+        <div class="blog2">
+            <div class="blogimg2"><img src="../../images/blog/technology.jpg"></div>
+            <div class="blog-content">
+                <div class="blog-title">
+                    <h1>How Technology Has Affected Me In My Daily Life</h1>
+                </div>
+                <div class="blog-desc">
+                    <p><span>"</span>Unlike, others it will be even very hard for me to live without 
+                        using technology. I use technology for many purppose in my daily Life
+                        let's almost all the work I do is related with technology directly or indirectly.
+                        For example, the laptop that I use is a technology that helps me to communicate 
+                        with friends and family. Similarly, the gas stove that is used to cook food is 
+                        a mechanical technology. Moreover, the projector that is used for teaching is a technology 
+                        that I use daily. 
+                         <span>"</span></p>
+                </div>
+            </div>
+            
+        </div>
+
+        <!-- third div -->
+        <div class="blog-main">
+            <div class="blog-content1">
+                <div class="blog2img">
+                    <img src="../../images/blog/education.jpg">
+                </div>
+                <div class="blog-desc1">
+                    <div class="blog-title1 large">Technology For Education...</div>
+                    <p> No doubt, the use of technology is pretty insane and important in the 
+                        field of education. And the uses have been increased after the invasion 
+                        of COVID-19. I, personally use technology to for studying different materials.
+                        I also use them to make projects and for online classes.
+                    </p>
+                </div>
+            </div>
+
+            <!-- fourth div -->
+            <div class="blog-content1">
+                <div class="blog-desc1">
+                    <div class="blog-title1 large">Technology For Communication...</div>
+                    <p> Technology has been playing immense role in the sector of communication. It is 
+                        technology because of which communication with different people around the world is
+                        possible. In the same way technology has played important role in my life.
+                        It helps me to communicate with the people I wanted to.For which I take help from
+                        several devices like mobile, laptop e.t.c. 
+                    </p>
+                </div>
+                <div class="blog2img">
+                    <img src="../../images/blog/communication.jpg">
+                </div>
+            </div>
+
+            <!-- fifth div that contains three divs -->
+            <div class="blogcontent2">
+                <div class="blogcard1 red">
+                    <div class="blog-title1 small twhite" style="color:white">Technology For Entertainment...</div>
+                    <div class="blogimg3">
+                        <img src="../../images/blog/entertainment.jpg">
+                    </div>
+                    <div class="blog-desc2">
+                        <p class="tiny"> No doubt, technology has evolved the entertainment industry.
+                            In fact, the entertaiment style has been rapidly changing due to the growing
+                             technology.  These technologies include video games, virtual worlds, and 
+                             online role-playing games and recreational social networking technologies. 
+                             In addition, there are two fundamental emphases in the scholarly cure of 
+                             entertainment technologies. Similarly, even I use technologies like mobile 
+                             and laptops to play games for entertaiment which helps me to ease my stress.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="blogcard1 yellow">
+                    <div class="blog-title1 small tred">Technology For Medical Enhancement...</div>
+                    <div class="blogimg3">
+                        <img src="../../images/blog/medical.jpg">
+                    </div>
+                    <div class="blog-desc2 tblack">
+                        <p class="tiny"> The industry of health and medicine is not the same today as it was some ten years ago. 
+                            This has changed because of medical advancement which was possible because of technological advancement.
+                            By using technology, the medical field can make discoveries regarding treatments, data collection, 
+                            symptom and disease research, cure research, human aiding devices (like hearing devices and speaking devices).
+                            Technology has made the medical area very accessible to people.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="blogcard1 red">
+                    <div class="blog-title1 small twhite" style="color:white">Technology For Security...</div>
+                    <div class="blogimg3">
+                        <img src="../../images/blog/security.jpg">
+                    </div>
+                    <div class="blog-desc2">
+                        <p class="tiny"> Data protection has become prime task today. Bacause it is data that is changing 
+                            the world. Everyday, we have been seeing cyberattacks. So, different security technologies 
+                            are being used to protect and stop cyberattacks. The banking transcation that we do online
+                            is using security to protect themselves form hackers. In conclusion, the protection of our
+                            data and different daily online transcations are being protected by technologies.
+                        </p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+    </div>
+
+     <!-- this is the div that has footer of this page -->
+     <div class="footer">
+        <div class="footer-logo">
+            <a href="../Index.html">
+                <div class="logo">
+                    <img src="../../images/logo.png">
+                </div>
+            </a>
+        </div>
+        <div clas="footer-para">
+            <div class="footer-text">
+                <div class="policy">
+                    <p class="twhite fot-title">Policies:</p>
+                    <p class="twhite">No return Policy after 7 Days</p>
+                    <p class="twhite">Return Policy before 7 Days</p>
+                </div>
+                <div class="mail">
+                    <p class="twhite fot-title">Mail us:</p>
+                    <p class="twhite">Just Read Private Limited,</p>
+                    <p class="twhite">Ring Road Koteshwor Chowk,</p>
+                    <p class="twhite">Kathmandu, Nepal</p>
+                    <p class="twhite">justread@gmail.com</p>
+        
+                </div>
+                <div class="address">
+                    <p class="twhite fot-title">Registered Office Address:</p>
+                    <p class="twhite">Tel : <span class="tred">9804894766 , 9805787654</span></p>
+                    <p class="twhite">U51109KA2012PTC066107</p>
+                </div>
+            </div>
+            <p class="twhite tiny">
+                Just Read is a website that sells all kinds of books online and ships it to the users.
+                This is a registered trademark and should not be used without permission.
+                <span class="tred">Copyright &copy 2022.</span>
+            </p>
+        </div>
+
+        <!-- this div contains social medias link -->
+        <div class="footer-soc-links">
+            <h1 class="tred">Follow Us At:</h1>
+            <a href="#">
+                <img src="../../images/footer/facebook.jpg">
+            </a>
+            <a href="#">
+                <img src="../../images/footer/insta.jpg">
+            </a>
+            <a href="#">
+                <img src="../../images/footer/twit.jpg">
+            </a>
+        </div> 
+    </div>
+
+    <script>
+         function showham(){
+            document.querySelector('.cross').style.display="flex";
+            document.querySelector('.hamlinks').style.display="flex";
+            document.querySelector('.hammenu').style.display="none";
+                    }
+            
+            function hideham(){
+            document.querySelector('.hammenu').style.display="flex";
+            document.querySelector('.hamlinks').style.display="none";
+            document.querySelector('.cross').style.display="none";
+            
+            }
+
+    </script>
+</body>
+</html>

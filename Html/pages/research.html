@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Researches</title>
+    <link rel="stylesheet" href="../../Css/home.css">
+    <link rel="stylesheet" href="../../Css/main.css">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <a href="../Index.html">
+                <div class="logo">
+                    <img src="../../images/logo.png">
+                </div>
+            </a>
+            <div class="links">
+                <h2><a href="../Index.html">Home</a></h2>
+                <h2><a href="./about.html">About Us</a></h2>
+                <h2><a href="./contact.html">Contact</a></h2>
+                <h2><a href="./research.html">Researches</a></h2>
+                <h2><a href="./blogs.html">Blogs</a></h2>
+            </div>
+            <div class="search">
+                <input type="text" placeholder="Search for Books" id="searchbox" onkeyup="search()">
+            </div>  
+            
+            <div class="hammenu" onclick="showham()">
+                <button><img src="../../images/hammenu.jpg"></button>
+            </div> 
+            <div class="cross" onclick="hideham()">
+                <button><h1>X</h1></button>
+            </div> 
+            
+        </div>
+        <div class="category">
+            <a href="./allbooks.html">
+                <h1>All Books</h1>
+            </a>
+            <a href="./Sifi.html">
+                <h1>SiFi</h1>
+            </a>
+            <a href="./fantasy.html">
+                <h1>Fantasy</h1>
+            </a>
+            <a href="./action.html">
+                <h1>Action<span>&</span><span>Adventure</span></h1>
+            </a>
+            <a href="./crime.html">
+                <h1>Crime <span>& </span><span>Detective</span></h1>
+            </a>
+            <a href="./self.html">
+                <h1>Self Help</h1>
+            </a>
+            <a href="./business.html">
+                <h1>Business</h1>
+            </a>
+        </div>
+
+
+
+          <!-- this is for mobile -->
+
+        <div class="hamlinks">
+            <a href="../Index.html">Home</a>  
+            <a href="./about.html">About Us</a> 
+            <a href="./contact.html">Contact</a> 
+            <a href="./research.html">Researches</a>   
+            <a href="./blogs.html">Blogs</a>    
+            <a href="./allbooks.html">ALL</a>
+            <a href="./Sifi.html">SiFI </a>
+            <a href="./fantasy.html">Fantasy</a>
+            <a href="./action.html">Action And Adventure</a>
+            <a href="./crime.html">Crime And Detective</a>
+            <a href="./self.html">Self Help</a>
+            <a href="./business.html">Business</a>
+        </div>
+
+        <div class="researches">
+           <h1 class="tred large">Researches</h1>
+            <div class="rdesc">
+                <p class="twhite">
+                    No doubt, this website was made taking references and inspiration from
+                    various websites available on the internet. Some of the honourable mentions 
+                    of the websites are given below along with the description of things inspired
+                    from them. Some of the websites are <span class="tred">https://www.flipkart.com</span>,
+                    <span class="tred">https://www.amazon.com</span>,
+                    <span class="tred">https://www.alibaba.com</span>,
+                    <span class="tred">https://www.daraz.com.np</span>,
+                    <span class="tred">https://lenskart.us</span>.
+                </p>
+            </div>
+            <div class="references1">
+                <div class="rtitle">
+                    <p class="large">www.flipkart.com</p>
+                </div>
+                <div class="rpicmain">
+                    <a href="https://www.flipkart.com/">
+                        <div class="rpic">
+                            <img src="../../images/researches/internet/category.png">
+                        </div>
+                    </a>
+                    <div class="sli-btn">
+                        <div class="first" onclick="changei(0)"></div>
+                        <div class="sec" onclick="changes(1)"></div>
+                    </div>
+                </div>
+                <div class="ref-desc">
+                    <p class="small">The inspiration taken from this website was for making 
+                        <span class="tred">"Category section"</span>
+                        of books like "Sifi", "Fantasy", "Self Help", etc. Not only this, the making of image 
+                        slider was also inspired from this website. 
+                    </p>
+                </div>
+            </div>
+            <div class="references2">
+                <div class="wrap">
+                    <div class="rtitle">
+                        <p class="large">www.lenskart.com</p>
+                    </div>
+                    <div class="ref-desc">
+                        <p class="small">This Website was taken in to inspiration to make the <span class="tred">buttons</span>
+                            for all the books cards section. The shown <span class="tred">"Shop Now"</span> 
+                            button and "Add To Cart" button of every page was inspired by 
+                            seeing the buttons of this webpage.</p>
+                    </div>
+                </div>
+                <div class="rpicmain2">
+                    <a href="https://www.lenskart.com/">
+                        <div class="rpic2">
+                            <img src="../../images/researches/internet/button.png">
+                        </div>   
+                    </a>
+                    <div class="sli-btn">
+                        <div class="third" onclick="changet(0)"></div>
+                        <div class="fourth" onclick="changef(1)"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="references1">
+                <div class="rtitle">
+                    <p class="large">www.boat-lifestyle.com</p>
+                </div>
+                <div class="rpicmain">
+                    <a href="https://www.boat-lifestyle.com/">
+                        <div class="rpic3">
+                            <img src="../../images/researches/internet/offers.png">
+                        </div>
+                    </a>
+                    <div class="sli-btn">
+                        <div class="fifth" onclick="changev(0)"></div>
+                        <div class="sixth" onclick="changex(1)"></div>
+                    </div>
+                </div>
+                <div class="ref-desc">
+                    <p class="small">The above shown pictures were taken as inspiration
+                        to design the <span class="tred">"Trending Offers"</span> section of home page. 
+                        Especially, the books 
+                        having margin in negative was inspired from this webpage. Similarly, the
+                        color for those divs were also taken into consideration. along with some 
+                        modifications.
+                    </p>
+                </div>
+            </div>
+
+            <div class="references1">
+                <div class="rtitle">
+                    <p class="large">www.ncell.axiata.com/en</p>
+                </div>
+                <div class="rpicmain">
+                    <a href="https://www.ncell.axiata.com/en">
+                        <div class="rpic4">
+                            <img src="../../images/researches/internet/footer.png">
+                        </div>
+                    </a>
+                    <div class="sli-btn">
+                        <div class="seven" onclick="changee(0)"></div>
+                        <div class="eight" onclick="changeg(1)"></div>
+                    </div>
+                </div>
+                <div class="ref-desc">
+                    <p class="small">The above shown pictures were taken as inspiration
+                        to design the <span class="tred">Footer</span> section of every pages.
+                        Especially, the socila media links and images were mostly inspired.
+                    </p>
+                </div>
+            </div>
+
+            <div class="references1">
+                <div class="rtitle">
+                    <p class="large">www.Microsoft.com</p>
+                </div>
+                <div class="rpicmain">
+                    <a href="https://www.microsoft.com/en-us/">
+                        <div class="rpic5">
+                            <img src="../../images/researches/internet/resea.png">
+                        </div>
+                    </a>
+                    <div class="sli-btn">
+                        <div class="nine" onclick="changen(0)"></div>
+                        <div class="ten" onclick="change10(1)"></div>
+                    </div>
+                </div>
+                <div class="ref-desc">
+                    <p class="small">The above shown pictures were taken as inspiration
+                        to design the <span class="tred">Researches</span> section of research page.
+                        The way of keeping images at one side and text on another slide was modified.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- this is the div that has footer of this page -->
+    <div class="footer">
+        <div class="footer-logo">
+            <a href="../Index.html">
+                <div class="logo">
+                    <img src="../../images/logo.png">
+                </div>
+            </a>
+        </div>
+        <div clas="footer-para">
+            <div class="footer-text">
+                <div class="policy">
+                    <p class="twhite fot-title">Policies:</p>
+                    <p class="twhite">No return Policy after 7 Days</p>
+                    <p class="twhite">Return Policy before 7 Days</p>
+                </div>
+                <div class="mail">
+                    <p class="twhite fot-title">Mail us:</p>
+                    <p class="twhite">Just Read Private Limited,</p>
+                    <p class="twhite">Ring Road Koteshwor Chowk,</p>
+                    <p class="twhite">Kathmandu, Nepal</p>
+                    <p class="twhite">justread@gmail.com</p>
+        
+                </div>
+                <div class="address">
+                    <p class="twhite fot-title">Registered Office Address:</p>
+                    <p class="twhite">Tel : <span class="tred">9804894766 , 9805787654</span></p>
+                    <p class="twhite">U51109KA2012PTC066107</p>
+                </div>
+            </div>
+            <p class="twhite tiny">
+                Just Read is a website that sells all kinds of books online and ships it to the users.
+                This is a registered trademark and should not be used without permission.
+                <span class="tred">Copyright &copy 2022.</span>
+            </p>
+        </div>
+
+        <!-- this div contains social medias link -->
+        <div class="footer-soc-links">
+            <h1 class="tred">Follow Us At:</h1>
+            <a href="#">
+                <img src="../../images/footer/facebook.jpg">
+            </a>
+            <a href="#">
+                <img src="../../images/footer/insta.jpg">
+            </a>
+            <a href="#">
+                <img src="../../images/footer/twit.jpg">
+            </a>
+        </div>
+    </div>
+
+    <script>
+
+        // this function is for showing hammenu
+         function showham()
+         {
+            document.querySelector('.cross').style.display="flex";
+            document.querySelector('.hamlinks').style.display="flex";
+            document.querySelector('.hammenu').style.display="none";
+        }
+    
+        //this hides hammenu
+        function hideham()
+        {
+        document.querySelector('.hammenu').style.display="flex";
+        document.querySelector('.hamlinks').style.display="none";
+        document.querySelector('.cross').style.display="none";
+    
+        }
+
+
+    </script>
+
+    <script src="../../Javascript/research.js"></script>
+
+</body>
+</html>

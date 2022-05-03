@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="../Css/home.css">
+</head>
+
+<body>
+    <!-- this is the main div that contains all the content of this page -->
+    <div class="container">
+
+        <!-- this div is designed for navbar -->
+        <div class="navbar">
+
+            <!-- this div has logo of website-->
+            <a href="./Index.html">
+                <div class="logo">
+                    <img src="../images/logo.png">
+                </div>
+            </a>
+
+            <!-- this div contains all the navigation links of navbar like home,about,contact and blogs  -->
+            <div class="links">
+                <h2><a href="./Index.html">Home</a></h2>
+                <h2><a href="./pages/about.html">About Us</a></h2>
+                <h2><a href="./pages/contact.html">Contact</a></h2>
+                <h2><a href="./pages/research.html">Researches</a></h2>
+                <h2><a href="./pages/blogs.html">Blogs</a></h2>
+            </div>
+
+            <!-- this div is for search box  -->
+            <div class="search">
+                <input type="text" placeholder="Search for Books" id="searchbox" onkeyup="search()">
+            </div> 
+
+            <!-- this div contains drop down menu that is for device less than 768px like mobile phones -->
+            <div class="hammenu" onclick="showham()">
+                <button><img src="../images/hammenu.jpg"></button>
+            </div> 
+
+            <!-- this dov contains close button that closes the drop down menu -->
+            <div class="cross" onclick="hideham()">
+                <button><h1>X</h1></button>
+            </div> 
+              
+        </div>
+
+        <!-- this div contains all the books category list -->
+        <div class="category">
+            <a href="./pages/allbooks.html">
+                <h1>All Books</h1>
+            </a>
+            <a href="./pages/Sifi.html">
+                <h1>SiFi</h1>
+            </a>
+            <a href="./pages/fantasy.html">
+                <h1>Fantasy</h1>
+            </a>
+            <a href="./pages/action.html">
+                <h1>Action<span>&</span><span>Adventure</span></h1>
+            </a>
+            <a href="./pages/crime.html">
+                <h1>Crime <span>& </span><span>Detective</span></h1>
+            </a>
+            <a href="./pages/self.html">
+                <h1>Self Help</h1>
+            </a>
+            <a href="./pages/business.html">
+                <h1>Business</h1>
+            </a>
+        </div>
+
+        <!-- this is drop down menu for device less than 768px -->
+        <div class="hamlinks">
+            <a href="../Index.html">Home</a>  
+            <a href="./pages/about.html">About Us</a> 
+            <a href="./pages/contact.html">Contact</a> 
+            <a href="./pages/research.html">Researches</a>   
+            <a href="./pages/blogs.html">Blogs</a>    
+            <a href="./pages/allbooks.html">ALL</a>
+            <a href="./pages/Sifi.html">SiFI </a>
+            <a href="./pages/fantasy.html">Fantasy</a>
+            <a href="./pages/action.html">Action And Adventure</a>
+            <a href="./pages/crime.html">Crime And Detective</a>
+            <a href="./pages/self.html">Self Help</a>
+            <a href="./pages/business.html">Business</a>
+        </div>
+
+        <!-- <img src="../images/prev.png"> -->
+        <!-- this div is for image slider -->
+        <div class="searchpage">
+        </div>
+        <div class="crousel">
+            <div class="prev" onclick="prev()"><button>&laquo;</button></div>
+            <div class="slider">
+                <div id="imgslider">
+                    <img src="../images/Harrycrousel.jpg">
+                </div>  
+            </div>
+            <div class="next" onclick="next()"><button>&raquo;</button></div>
+        </div>
+
+        <!-- this is the section of the books that has all trending books list -->
+        <div class="section1">
+
+            <!-- this div holds the title and view more button -->
+            <div class="title">
+                <h1>Trending</h1>
+                <button class="view" onclick="location.href='./pages/allbooks.html';"> View More</button>
+            </div>
+
+            <!-- this div contains all the books list that are mapped from array in js  -->
+            <div class="trending">
+
+            </div>
+        </div>
+
+        <div class="offertitle">
+            <h1>Trending Offers</h1>
+        </div>
+        
+        <!-- this div is for offer -->
+        <div class="offers">
+           
+            <!-- this is the main div for first offer section -->
+            <div class="offer1 scale">
+
+                <!-- this has the book image thaat is currently in offer -->
+                <div class="offerimage">
+                    <img src="../images/self help/hyper.jpg">
+                </div>
+
+                <!-- this div holds the description of the offers -->
+                <div class="desc">
+                    <h1>"Hyperfocus teaches you how to become more efficient and 
+                        improve your concentration. this is one of the best books. "
+                    </h1>
+                    <button>Shop Now</button>
+                </div>
+
+            </div>
+
+            <div class="offer1 scale">
+
+                <!-- this has the book image thaat is currently in offer -->
+                <div class="offerimage">
+                    <img src="../images/self help/atomic.jpg">
+                </div>
+
+                <!-- this div holds the description of the offers -->
+                <div class="desc">
+                    <h1>"In the book, James outlines the three layers of behaviour 
+                        change; a change in your outcomes, process or a change in 
+                        your identity. "
+                    </h1>
+                    <button>Shop Now</button>
+                </div>
+
+            </div>
+
+
+             <!-- this is the main div for first offer section -->
+            <div class="offer2 scale">
+
+                <!-- this has the book image thaat is currently in offer -->
+                <div class="offerimage">
+                    <img src="../images/fantasy/mount.jpg">
+                </div>
+
+                 <!-- this div holds the description of the offers -->
+                <div class="desc">
+                    <h1>" Mount Emily Revisited is the second in a series of books which
+                         centre on two time-traveling 13-year-old students at Mount Emily
+                          Girls' School. "</h1>
+                        <button>Shop Now</button>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- this is the section of the books that has all for you books list -->
+        <div class="section1">
+
+            <!-- this div holds the title and view more button -->
+            <div class="title">
+                <h1>For You</h1>
+                <button class="view" onclick="location.href='./pages/allbooks.html';"> View More</button>
+            </div>
+
+            <!-- this div contains all the books list that are mapped from array in js  -->
+            <div class="ForYou">
+                
+            </div>
+
+        </div>
+
+        <!-- //this is for top pic section -->
+
+        <div class="section1">
+
+            <!-- this div holds the title and view more button -->
+            <div class="title">
+                <h1>Top Picks</h1>
+                <button class="view" onclick="location.href='./pages/allbooks.html';"> View More</button>
+            </div>
+
+            <!-- this div contains all the books list that are mapped from array in js  -->
+            <div class="toppicks">
+                
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- this is the div that contains footer of this page -->
+    <div class="footer">
+        <div class="footer-logo">
+            <a href="./Index.html">
+                <div class="logo">
+                    <img src="../images/logo.png">
+                </div>
+            </a>
+        </div>
+        <div clas="footer-para">
+            <div class="footer-text">
+                <div class="policy">
+                    <p class="twhite fot-title">Policies:</p>
+                    <p class="twhite">No return Policy after 7 Days</p>
+                    <p class="twhite">Return Policy before 7 Days</p>
+                </div>
+                <div class="mail">
+                    <p class="twhite fot-title">Mail us:</p>
+                    <p class="twhite">Just Read Private Limited,</p>
+                    <p class="twhite">Ring Road Koteshwor Chowk,</p>
+                    <p class="twhite">Kathmandu, Nepal</p>
+                    <p class="twhite">justread@gmail.com</p>
+        
+                </div>
+                <div class="address">
+                    <p class="twhite fot-title">Registered Office Address:</p>
+                    <p class="twhite">Tel : <span class="tred">9804894766 , 9805787654</span></p>
+                    <p class="twhite">U51109KA2012PTC066107</p>
+                </div>
+            </div>
+            <p class="twhite tiny">
+                Just Read is a website that sells all kinds of books online and ships it to the users.
+                This is a registered trademark and should not be used without permission.
+                <span class="tred">Copyright &copy 2022.</span>
+            </p>
+        </div>
+        
+        <!-- this div has all social medias links -->
+        <div class="footer-soc-links">
+            <h1 class="tred">Follow Us At:</h1>
+            <a href="#">
+                <img src="../images/footer/facebook.jpg">
+            </a>
+            <a href="#">
+                <img src="../images/footer/insta.jpg">
+            </a>
+            <a href="#">
+                <img src="../images/footer/twit.jpg">
+            </a>
+        </div>
+    </div>
+
+
+<script>
+
+    //this is writing code for image slider
+
+    // making array that holds the images for image slider
+    const imgs=["fantasycrousel.png","sherlockcrousel.png","Harrycrousel.jpg","hungercrousel.jpg",
+                    "sherlockcrousel2.png","mancrousel.png"];
+
+    // selecting div whose id is imgslider as imgslider using queryselector
+    const imgslider=document.querySelector('#imgslider');
+
+    // initialzing x for getting the index of array
+    let x=0;
+
+    // this is the setInterval function that sets the interval for the function to initialize after 3sec
+    setInterval(() => {
+
+        // checking if the value of x is less than length of array 
+
+        if(x<imgs.length){
+             x=x+1;         // setting x to x+1
+        }else{
+            x=1;  //if x is grater than array length then setting x=1
+        }
+        imgslider.innerHTML="<img src=../images/"+imgs[x-1]+">";
+    }, 5000);
+
+
+    //this is code fpr showing next and previous pictures in imageslider
+    function prev(){
+        x=x-1;
+        if(x<1){
+            x=imgs.length;
+        }
+        imgslider.innerHTML="<img src=../images/"+imgs[x-1]+">";
+    }
+
+    function next(){
+        x=x+1;
+        if(x>imgs.length){
+            x=1;
+        }
+        imgslider.innerHTML="<img src=../images/"+imgs[x-1]+">";
+    }
+    //for displaying ham in smaller devices
+    function showham(){
+        document.querySelector('.cross').style.display="flex";  
+        document.querySelector('.hamlinks').style.display="flex";
+        document.querySelector('.hammenu').style.display="none";
+    }
+
+
+    //this is the function for hiding drop down menu
+    function hideham(){
+        document.querySelector('.hammenu').style.display="flex";
+        document.querySelector('.hamlinks').style.display="none";
+        document.querySelector('.cross').style.display="none";
+
+    }
+
+</script>
+<script src="../Javascript/Home.js"></script>
+</body>
+
+</html>
+

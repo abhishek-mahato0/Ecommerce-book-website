@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Books</title>
+
+    <link rel="stylesheet" href="../../Css/home.css">
+    <link rel="stylesheet" href="../../Css/main.css">
+</head>
+<body>
+
+      <!-- this is the main div that contains all the content of this page -->
+    <div class="container">
+
+        <!-- this div is designed for navbar -->
+        <div class="navbar">
+
+            <!-- this div has logo of website-->
+            <a href="../Index.html">
+                <div class="logo">
+                    <img src="../../images/logo.png">
+                </div>
+            </a>
+            <!-- this div contains all the navigation links of navbar like home,about,contact and blogs  -->
+            <div class="links">
+                <h2><a href="../Index.html">Home</a></h2>
+                <h2><a href="./about.html">About Us</a></h2>
+                <h2><a href="./contact.html">Contact</a></h2>
+                <h2><a href="./research.html">Researches</a></h2>
+                <h2><a href="./blogs.html">Blogs</a></h2>
+            </div>
+
+             <!-- this div is for search box  -->
+            <div class="search">
+                <input type="text" placeholder="Search for Books" id="searchbox" onkeyup="search()">
+            </div> 
+            
+            <!-- this div contains drop down menu that is for device less than 768px like mobile phones -->
+            <div class="hammenu" onclick="showham()">
+                <button><img src="../../images/hammenu.jpg"></button>
+            </div> 
+
+            <!-- this dov contains close button that closes the drop down menu -->
+            <div class="cross" onclick="hideham()">
+                <button><h1>X</h1></button>
+            </div> 
+            
+        </div>
+
+        <!-- this div contains all the books category list -->
+        <div class="category">
+            <a href="./allbooks.html">
+                <h1>All Books</h1>
+            </a>
+            <a href="./Sifi.html">
+                <h1>SiFi</h1>
+            </a>
+            <a href="./fantasy.html">
+                <h1>Fantasy</h1>
+            </a>
+            <a href="./action.html">
+                <h1>Action<span>&</span><span>Adventure</span></h1>
+            </a>
+            <a href="./crime.html">
+                <h1>Crime <span>& </span><span>Detective</span></h1>
+            </a>
+            <a href="./self.html">
+                <h1>Self Help</h1>
+            </a>
+            <a href="./business.html">
+                <h1>Business</h1>
+            </a>
+        </div>
+
+
+
+          <!-- this is drop down menu for device less than 768px -->
+          <div class="hamlinks">
+            <a href="../Index.html">Home</a>  
+            <a href="./about.html">About Us</a> 
+            <a href="./contact.html">Contact</a> 
+            <a href="./research.html">Researches</a>   
+            <a href="./blogs.html">Blogs</a>    
+            <a href="./allbooks.html">ALL</a>
+            <a href="./Sifi.html">SiFI </a>
+            <a href="./fantasy.html">Fantasy</a>
+            <a href="./action.html">Action And Adventure</a>
+            <a href="./crime.html">Crime And Detective</a>
+            <a href="./self.html">Self Help</a>
+            <a href="./business.html">Business</a>
+        </div>
+
+        <!-- this is the section that contains heading of category and books list along with their description -->
+        <div class="sifisection"> 
+
+            <!-- this is the left line  -->
+            <div class="line">
+
+            </div>
+
+            <!-- this contains the title of category of books -->
+            <div class="sifi_title">
+                <h1>Business</h1>
+            </div>
+            
+            <!-- this is the right line  -->
+            <div class="line">
+
+            </div>
+
+        </div>
+
+        <!-- this div conatins all the list of all the business books and their description form array in of js  -->
+        <div class="books">
+
+        </div>
+    </div>
+
+     <!-- this is the div that has footer of this page -->
+     <div class="footer">
+        <div class="footer-logo">
+            <a href="../Index.html">
+                <div class="logo">
+                    <img src="../../images/logo.png">
+                </div>
+            </a>
+        </div>
+        <div clas="footer-para">
+            <div class="footer-text">
+                <div class="policy">
+                    <p class="twhite fot-title">Policies:</p>
+                    <p class="twhite">No return Policy after 7 Days</p>
+                    <p class="twhite">Return Policy before 7 Days</p>
+                </div>
+                <div class="mail">
+                    <p class="twhite fot-title">Mail us:</p>
+                    <p class="twhite">Just Read Private Limited,</p>
+                    <p class="twhite">Ring Road Koteshwor Chowk,</p>
+                    <p class="twhite">Kathmandu, Nepal</p>
+                    <p class="twhite">justread@gmail.com</p>
+        
+                </div>
+                <div class="address">
+                    <p class="twhite fot-title">Registered Office Address:</p>
+                    <p class="twhite">Tel : <span class="tred">9804894766 , 9805787654</span></p>
+                    <p class="twhite">U51109KA2012PTC066107</p>
+                </div>
+            </div>
+            <p class="twhite tiny">
+                Just Read is a website that sells all kinds of books online and ships it to the users.
+                This is a registered trademark and should not be used without permission.
+                <span class="tred">Copyright &copy 2022.</span>
+            </p>
+        </div>
+
+        <!-- this div contains social medias link -->
+        <div class="footer-soc-links">
+            <h1 class="tred">Follow Us At:</h1>
+            <a href="#">
+                <img src="../../images/footer/facebook.jpg">
+            </a>
+            <a href="#">
+                <img src="../../images/footer/insta.jpg">
+            </a>
+            <a href="#">
+                <img src="../../images/footer/twit.jpg">
+            </a>
+        </div>        
+    </div>
+    <script src="../../Javascript/business.js"></script>
+    
+</body>
+</html>

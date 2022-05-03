@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Page</title>
+
+    <link rel="stylesheet" href="../../Css/home.css" />
+    <style>
+      input {
+        width: 100%;
+        display: flex;
+        height: 30px;
+        border-radius: 10px;
+        text-align: center;
+        border: white;
+        margin-bottom: 10px;
+      }
+      #submit {
+        background-color: rgba(13, 75, 13, 0.726);
+        color: white;
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 10px;
+        cursor: pointer;
+      }
+
+      #submit:hover {
+        background-color: black;
+        transform: scale(1.1);
+      }
+      #message {
+        color: rgb(253, 252, 252);
+        font-family: Arial, Helvetica, sans-serif;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- this is the main div that contains all the content of this page -->
+    <div class="container">
+      <!-- this div is designed for navbar -->
+      <div class="navbar">
+        <!-- this div has logo of website-->
+        <a href="../Index.html">
+          <div class="logo">
+            <img src="../../images/logo.png" />
+          </div>
+        </a>
+
+        <!-- this div contains all the navigation links of navbar like home,about,contact and blogs  -->
+        <div class="links">
+          <h2><a href="../Index.html">Home</a></h2>
+          <h2><a href="./about.html">About Us</a></h2>
+          <h2><a href="./contact.html">Contact</a></h2>
+          <h2><a href="./research.html">Researches</a></h2>
+          <h2><a href="./blogs.html">Blogs</a></h2>
+        </div>
+
+        <!-- this div is for search box  -->
+        <div class="search">
+          <input
+            type="text"
+            placeholder="Search for Books"
+            id="searchbox"
+            onkeyup="search()"
+          />
+        </div>
+
+        <!-- this div contains drop down menu that is for device less than 768px like mobile phones -->
+        <div class="hammenu" onclick="showham()">
+          <button><img src="../../images/hammenu.jpg" /></button>
+        </div>
+
+        <!-- this dov contains close button that closes the drop down menu -->
+        <div class="cross" onclick="hideham()">
+          <button><h1>X</h1></button>
+        </div>
+      </div>
+
+      <!-- this div contains all the books category list -->
+      <div class="category">
+        <a href="./allbooks.html">
+          <h1>All Books</h1>
+        </a>
+        <a href="./Sifi.html">
+          <h1>SiFi</h1>
+        </a>
+        <a href="./fantasy.html">
+          <h1>Fantasy</h1>
+        </a>
+        <a href="./action.html">
+          <h1>Action<span>&</span><span>Adventure</span></h1>
+        </a>
+        <a href="./crime.html">
+          <h1>Crime <span>& </span><span>Detective</span></h1>
+        </a>
+        <a href="./self.html">
+          <h1>Self Help</h1>
+        </a>
+        <a href="./business.html">
+          <h1>Business</h1>
+        </a>
+      </div>
+
+      <!-- this is drop down menu for device less than 768px -->
+      <div class="hamlinks">
+        <a href="../Index.html">Home</a>
+        <a href="./about.html">About Us</a>
+        <a href="./contact.html">Contact</a>
+        <a href="./blogs.html">Blogs</a>
+        <a href="./research.html">Researches</a>
+        <a href="./allbooks.html">ALL</a>
+        <a href="./Sifi.html">SiFI </a>
+        <a href="./fantasy.html">Fantasy</a>
+        <a href="./action.html">Action And Adventure</a>
+        <a href="./crime.html">Crime And Detective</a>
+        <a href="./self.html">Self Help</a>
+        <a href="./business.html">Business</a>
+      </div>
+
+      <!-- this is the main div that has all the content of the form -->
+      <div class="contactformdiv">
+        <!-- this div holds the message of the form -->
+        <div
+          class="formheading"
+          style="
+            color: white;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            margin-top: 20px;
+          "
+        >
+          <h1>
+            Please, Feel Free to Contact in Case of Any Querries. Drop your
+            Precious Comments
+          </h1>
+        </div>
+
+        <!-- this is the div that contains form inside it -->
+        <div
+          class="form"
+          name="form"
+          style="
+            background-color: rgb(253, 0, 0);
+            padding: 10px;
+            margin: 20px 30% 10px 30%;
+            display: flex;
+            width: 30vw;
+            border-radius: 10px;
+            box-shadow: black 10px 10px 10px 10px;
+          "
+        >
+          <!-- starting of contact form -->
+          <form
+            id="contactform"
+            style="
+              padding: 10px;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: center;
+            "
+          >
+            <input
+              type="text"
+              name="firstname"
+              id="firstname"
+              placeholder="First Name"
+              required
+            />
+            <input
+              type="text"
+              name="lastname"
+              id="lastname"
+              placeholder="Last Name"
+              required
+            />
+            <input
+              type="tel"
+              name="phone"
+              id="phone"
+              placeholder="Phone Number"
+              required
+            />
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Email"
+              required
+            />
+            <textarea
+              cols="43"
+              rows="10"
+              id="textarea"
+              placeholder="Enter your Message here"
+            ></textarea>
+            <input
+              type="submit"
+              id="submit"
+              onclick="return formValidation()"
+            />
+            <p id="message"></p>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- this is the div that has footer of this page -->
+    <div class="footer">
+      <div class="footer-logo">
+        <a href="../Index.html">
+          <div class="logo">
+            <img src="../../images/logo.png" />
+          </div>
+        </a>
+      </div>
+      <div clas="footer-para">
+        <div class="footer-text">
+          <div class="policy">
+            <p class="twhite fot-title">Policies:</p>
+            <p class="twhite">No return Policy after 7 Days</p>
+            <p class="twhite">Return Policy before 7 Days</p>
+          </div>
+          <div class="mail">
+            <p class="twhite fot-title">Mail us:</p>
+            <p class="twhite">Just Read Private Limited,</p>
+            <p class="twhite">Ring Road Koteshwor Chowk,</p>
+            <p class="twhite">Kathmandu, Nepal</p>
+            <p class="twhite">justread@gmail.com</p>
+          </div>
+          <div class="address">
+            <p class="twhite fot-title">Registered Office Address:</p>
+            <p class="twhite">
+              Tel : <span class="tred">9804894766 , 9805787654</span>
+            </p>
+            <p class="twhite">U51109KA2012PTC066107</p>
+          </div>
+        </div>
+        <p class="twhite tiny">
+          Just Read is a website that sells all kinds of books online and ships
+          it to the users. This is a registered trademark and should not be used
+          without permission.
+          <span class="tred">Copyright &copy 2022.</span>
+        </p>
+      </div>
+
+      <!-- this div contains social medias link -->
+        <div class="footer-soc-links">
+            <h1 class="tred">Follow Us At:</h1>
+            <a href="#">
+            <img src="../../images/footer/facebook.jpg" />
+            </a>
+            <a href="#">
+            <img src="../../images/footer/insta.jpg" />
+            </a>
+            <a href="#">
+            <img src="../../images/footer/twit.jpg" />
+            </a>
+         </div>
+    </div>
+
+    <!-- internal js  -->
+    <script>
+      // this function is called user submits the form
+      function formValidation() {
+        let submitvalue = true;
+        let firstname = document.getElementById("firstname").value;
+        let lastname = document.getElementById("lastname").value;
+        let email = document.getElementById("email").value;
+        let phone = document.getElementById("phone").value;
+        let textarea = document.getElementById("textarea").value;
+        let message = document.querySelector("#message");
+
+        if (firstname.length == 0) {
+          message.innerHTML = "Please leave a First Name";
+          submitvalue = false;
+        } else if (firstname.length < 3) {
+          message.innerHTML = "First Name cannot be less that three digits";
+          submitvalue = false;
+        } else if (lastname.length == 0) {
+          message.innerHTML = "Last Name is required";
+          submitvalue = false;
+        } else if (lastname.length < 2) {
+          message.innerHTML = "Last Name is too small";
+          submitvalue = false;
+        } else if (phone.length == 0) {
+          message.innerHTML = "Phone Number Cannot be empty";
+          submitvalue = false;
+        } else if (phone.length < 10) {
+          message.innerHTML = "Phone Number Cannot be less than 10 digits";
+          submitvalue = false;
+        } else if (phone.length > 10) {
+          message.innerHTML = "Phone Number Cannot be more than 10 digits";
+          submitvalue = false;
+        } else if (email.length == 0) {
+          message.innerHTML = "Please leave Your Email.";
+          submitvalue = false;
+        } else if (email.length < 15) {
+          message.innerHTML = "Please Check Your Email";
+          submitvalue = false;
+        } else if (textarea.length < 5) {
+          message.innerHTML =
+            "Please make sure your message has more than five letters.";
+          submitvalue = false;
+        } else if (submitvalue == true) {
+          confirm("Do You Want to submit the form");
+        }
+        return submitvalue;
+      }
+
+      //for displaying ham in smaller devices
+      function showham() {
+        document.querySelector(".cross").style.display = "flex";
+        document.querySelector(".hamlinks").style.display = "flex";
+        document.querySelector(".hammenu").style.display = "none";
+      }
+
+      //this is the function for hiding drop down menu
+      function hideham() {
+        document.querySelector(".hammenu").style.display = "flex";
+        document.querySelector(".hamlinks").style.display = "none";
+        document.querySelector(".cross").style.display = "none";
+      }
+    </script>
+  </body>
+</html>

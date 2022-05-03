@@ -1,0 +1,459 @@
+
+/* this will style all paragraph in the html */
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+}
+
+/* this is for all category page */
+.sifisection{
+    margin: 10px 20px 10px 20px;
+    display: flex;
+}
+
+/* title styling of all category pages */
+.sifi_title h1{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.sifi_title_small h1{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+/* this is for line  */
+.line{
+    background-color: white;
+    height: 5px;
+    width: 80%;
+    margin:25px 20px 25px 20px;
+    border-radius: 20px;
+}
+
+/* this is styling div for all books of each category */
+.books{
+    color: white;
+    display: flex;
+    width:100%;
+}
+
+/* this is styling for allbooks html page */
+.allbookslist{ 
+    display:grid;
+    grid-template-columns: 33% 33% 33%;
+    margin:20px 20px 10px 20px;
+    
+}
+
+/* this is for allbooks html page div fopr each books*/
+.allmainsec{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    padding: 20px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+    background-color: rgb(209, 204, 204);
+    border-radius: 10px;
+}
+
+/* for description of boks */
+.texts{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+/* styling button (Add To Cart) */
+.allmainsec button{
+    width:50%;
+    margin:10px 25% 10px 25%;
+}
+
+.allmainsec:hover{
+    transition: 0.2s;
+    transform: scale(1.01);
+}
+
+.allmainsec button:hover{
+    transition: 0.2s;
+    transform: scale(1.03);
+}
+
+
+/* for blog page */
+table th{
+    padding-left: 40px;
+    padding-right: 20px;
+    border-right: 1px solid red;
+}
+
+/* styling blog  div*/
+.blog{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:80%;
+    height: 300px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;   
+    margin: 70px 10% 10px 10%;
+    background-color: red;
+    border-radius: 10px;
+}
+/* styling images of blog */
+.blogimg img{
+    height: 390px;
+    width:40vw;
+    margin: -30px -50px -30px 10px;
+    border-radius: 50px;
+}
+
+/* this is for styling title of blog */
+.blog-title h1{
+    margin-bottom: 5px;
+    font-size: xx-large;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* this is styling description paragraph  */
+.blog-desc p{
+    font-size: large;
+    padding:10px
+}
+
+/* this is for span tag used in blog description */
+.blog-desc span{
+    font-size: xx-larger;
+    font-weight: bolder;
+}
+
+/* this is for the secong blog */
+.blog2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:90%;
+    height: 300px;
+    color: rgb(5, 5, 5);
+    font-family: Arial, Helvetica, sans-serif;   
+    margin: 70px 5% 10px 5%;
+    background-color: rgb(255, 230, 0);
+    border-radius: 10px;
+}
+
+/* styling image of second blog */
+.blogimg2 img{
+    height: 350px;
+    width:40vw;
+    margin: -30px 10px -30px -40px;
+    border-radius: 50px;
+}
+
+/* gor heading tag */
+.blog2 h1{
+    font-size: x-large;
+}
+
+/* this is for the content of the first blog */
+.blog-content1{
+    display: flex;
+    width:90%;
+    margin:50px 5% 50px 5%;
+}
+.blog2img{
+    width: 50vw;
+    height: 350px;
+    margin-bottom: 50px;
+}
+.blog2img img{
+    width:100%;
+    height: 350px;
+    border-radius: 10px;
+
+}
+.blog-desc1{
+    color: white;
+    width:50vw;
+    height: 200px;
+    padding:10px;
+    margin:50px 10px 50px 10px;
+    font-size: x-large;
+   
+}
+
+.blog-title1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: red;
+}
+
+.blogcontent2{
+    display: flex;
+    width:90%;
+    margin: 10px 5% 10px 5%;
+    justify-content: space-between;
+}
+.blogcard1{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    color: whitesmoke;
+    margin-right: 20px;
+}
+
+.blog-title1{
+    margin-top: 10px;
+}
+
+.blogimg3{
+    height: 100px;
+    width: 100%;
+}
+
+.blogimg3 img{
+    width: 100%;  
+    margin-top: 10px; 
+}
+
+.blog-desc2{
+    margin-top: 150px;
+    padding: 10px;
+}
+
+.blogcard1:hover{
+    transform: scale(1.03);
+    transition: 0.1s;
+    border: 1px solid white;
+}
+
+/* this is adding hover to all images of this document */
+img:hover{
+    transform: scale(1.02);
+}
+
+/* css for about page */
+.about{
+    height:70vh;
+    width: 70vw;
+    margin: 25px 15vw 15px 15vw;
+    background-color: rgb(212, 247, 247);
+    display: flex;
+}
+.about-box{
+    display: flex;
+    flex-direction: column;
+    width:50%;
+    height: 50%;
+    justify-content: center;
+    margin: 8% 10px 10px 10px;
+}
+.about-title{
+    display: flex;
+    justify-content: center;
+    margin: 50px 10px 10px 10px;
+    font-weight: bolder;
+}
+.soc-links{
+    display: flex;
+    margin:20px 5px 1px 30%;
+    width: 60%;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+/* this is for the social media image of about us page*/
+.soc-links img{
+    display: flex;
+    height: 30px;
+    width: 30px;
+    border-radius: 10px;
+    
+}
+
+/* this is the div that has image used in about page */
+.about-img{
+    width:50%;
+    height: 100%;
+    margin-bottom: 5px;
+
+}
+.about-img >img{
+    margin-top: 50px;
+    height: 70%;
+    width: 100%;
+}
+
+.about-btn{
+    margin: 10px;
+}
+
+/* this is for button */
+.about-btn button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: blue;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid blue;
+    cursor: pointer;
+}
+
+.about-btn button:hover{
+    background-color: red;
+    transform: scale(1.04);
+    border: 1px solid red;
+}
+
+
+/* styling for reserch page */
+
+.researches{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin:30px 10px 10px 10px ;
+}
+
+/* this is for all div having class .references1 */
+.references1{
+    display: flex;
+    flex-direction: column;
+    margin:20px 10px 10px 10px; 
+    background-color: rgb(222, 222, 223);
+    padding: 10px;
+}
+
+/* this is for the website title */
+.rtitle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.rpicmain{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin:10px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.rpicmain a , .rpicmain2 a{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin:10px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+.rpic, .rpic3 , .rpic4{
+    margin-top: 10px;
+    width: 85%;
+    display: flex;
+    
+}
+.rpic img , .rpic3 img, .rpic5 img{
+    height:460px;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: width 0.2ms ease-in-out;
+}
+
+/* setting hover to none for research page */
+.rpicmain img:hover{
+    transform: none;
+}
+.sli-btn{
+    display: flex;
+}
+.first, .fifth, .seven , .nine{
+    background-color: black;
+}
+.sec , .sixth , .eight, .ten{
+    background-color: rgb(126, 125, 125);
+}
+.first, .sec, .fifth, .sixth, .seven , .eight, .nine, .ten{
+    
+    margin: 10px;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.references2{
+    display: flex;
+    margin:20px 10px 10px 10px; 
+    background-color: rgb(222, 222, 223);
+    padding: 10px;
+    width: 85%;
+}
+
+.third{
+    background-color: black;
+}
+.fourth{
+    background-color: rgb(126, 125, 125);
+}
+.third, .fourth{
+    
+    margin: 10px;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.wrap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    width: 40%;
+}
+.rpicmain2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin:10px;
+    width: 60%;
+    align-items: center;
+    justify-content: center;
+  }
+
+.rpic2 {
+    margin-top: 10px;
+    width: 85%;
+    display: flex;
+    
+}
+.rpic2 img{
+    height:460px;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: width 0.2ms ease-in-out;
+}
+
+.rpic4 img{
+    height:300px;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: width 0.2ms ease-in-out;
+}
